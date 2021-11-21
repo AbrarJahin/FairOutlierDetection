@@ -4,6 +4,26 @@ Hanyu Song, Peizhao Li, and Hongfu Liu. "Deep Clustering based Fair Outlier Dete
 ## Paper Abstract
 In this paper, we focus on the fairness issues regarding unsupervised outlier detection. Traditional algorithms, without specific design for algorithmic fairness, could implicitly encode and propagate statistical bias in data and raise societal concerns. To correct such unfairness and deliver a fair set of potential outlier candidates, we propose Deep Clustering-based Fair Outlier Detection (DCFOD) that learns a good representation for utility maximization while enforcing the learnable representation to be subgroup-invariant on the sensitive attribute. Considering the coupled and reciprocal nature between clustering and outlier detection, we leverage deep clustering to discover the intrinsic cluster structure and out-of-structure instances. Meanwhile, an adversarial training erases the sensitive pattern for instances for fairness adaptation. Technically, we propose an instance-level weighted representation learning strategy to enhance the joint deep clustering and outlier detection, where the dynamic weight module re-emphasizes contributions of likely-inliers while mitigating the negative impact from outliers. Demonstrated by experiments on eight datasets comparing to 17 outlier detection algorithms, our DCFOD method consistently achieves superior performance on both the outlier detection validity and two types of fairness notions in outlier detection.
 
+# Environment Install in Windows
+
+1. Downoad conda from [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
+
+2. Install Python Version with miniconda-
+   
+        conda create -n p3.6_outlier python=3.6
+        conda activate p3.6_outlier
+3. Install Dependencies-
+
+        conda activate p3.6_outlier
+        conda install python=3.6 -y
+        conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=10.1 -c pytorch -y
+        #conda install -c conda-forge numpy=1.7.1 -y
+        conda install -c conda-forge scikit-learn==0.22.0 -y
+        conda install -c conda-forge pandas==1.0.5 -y
+        #conda install cuda=10.1.243
+4. Install the python plugins in VS Code to run in VS Code.
+5. Done!!
+
 ## Software Requirement
 ```
 numpy==1.7.1
