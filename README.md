@@ -10,17 +10,20 @@ In this paper, we focus on the fairness issues regarding unsupervised outlier de
 
 2. Install Python Version with miniconda-
    
-        conda create -n p3.6_outlier python=3.6
-        conda activate p3.6_outlier
+        conda env remove -n p3.6_outlier
+        conda create -n p3.6_outlier python=3.6.* -n
+        #conda activate p3.6_outlier
+
 3. Install Dependencies-
 
         conda activate p3.6_outlier
-        conda install python=3.6 -y
-        conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=10.1 -c pytorch -y
-        #conda install -c conda-forge numpy=1.7.1 -y
-        conda install -c conda-forge scikit-learn==0.22.0 -y
-        conda install -c conda-forge pandas==1.0.5 -y
+        conda install python=2.* pip -y -n p3.6_outlier
+        #pip location is - C:\Users\ajahin-admin\miniconda3\envs\p3.6_outlier\Scripts -> so install numpy with this pip
+        C:\Users\ajahin-admin\miniconda3\envs\p3.6_outlier\Scripts\pip install numpy==1.7.0
+        conda install -y -n p3.6_outlier -c conda-forge  scikit-learn==0.22.0 pandas==1.0.5 numpy=1.9.3 
+        conda install -y -n p3.6_outlier -c pytorch      pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=10.1
         #conda install cuda=10.1.243
+
 4. Install the python plugins in VS Code to run in VS Code.
 5. Done!!
 

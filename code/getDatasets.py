@@ -1,17 +1,23 @@
+
+import sys
+print(sys.executable.split('/'))
+print(sys.version)
+exit()
+
+
 """
 Obtain input, outlier labels, and sensitive attribute subgroups for all datasets
 """
 
 import os
-import numpy as np
 import pandas as pd
+import numpy as np
 from io import BytesIO
 from zipfile import ZipFile
 from urllib.request import urlopen
 from scipy.io import arff
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import OneHotEncoder
-
 
 def scale(X):
     scaler = StandardScaler()
