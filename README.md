@@ -11,7 +11,7 @@ In this paper, we focus on the fairness issues regarding unsupervised outlier de
 2. Install Python Version with miniconda-
    
         conda env remove -n p3.6_outlier
-        conda create -n p3.6_outlier python=3.6.* -n
+        conda create -n p3.6_outlier python=3.6.*
         #conda activate p3.6_outlier
 
 3. Install Dependencies-
