@@ -1,14 +1,3 @@
-
-import sys
-print(sys.executable.split('/'))
-print(sys.version)
-exit()
-
-
-"""
-Obtain input, outlier labels, and sensitive attribute subgroups for all datasets
-"""
-
 import os
 import pandas as pd
 import numpy as np
@@ -18,6 +7,21 @@ from urllib.request import urlopen
 from scipy.io import arff
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import OneHotEncoder
+
+"""
+import sys
+print(sys.executable.split('/'))
+print(sys.version)
+exit()
+"""
+
+"""
+Obtain input, outlier labels, and sensitive attribute subgroups for all datasets
+"""
+
+# Got This error-     from typing import ChainMap, MutableMapping, TypeVar, cast
+#                              ImportError: cannot import name 'ChainMap'
+# So updated python version to 3.7- https://stackoverflow.com/a/61342601/2193439
 
 def scale(X):
     scaler = StandardScaler()

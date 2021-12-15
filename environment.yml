@@ -1,0 +1,18 @@
+name: outlier
+
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+
+dependencies:
+  - python==3.7.3
+  - numpy==1.14.6
+  - scikit-learn==0.22.0
+  - pandas==1.0.3
+  - pytorch::pytorch==1.7.0
+  - pytorch::torchvision==0.8.0
+  - pytorch::torchaudio==0.7.0
+  - pytorch::cudatoolkit=10.1
+  - pip:
+    - requests
