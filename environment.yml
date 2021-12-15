@@ -15,4 +15,4 @@ dependencies:
   - pytorch::torchaudio==0.7.0
   - pytorch::cudatoolkit=10.1
   - pip:
-    - requests
+    - xlrd
